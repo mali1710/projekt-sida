@@ -1,16 +1,49 @@
 // Breakpoints
 //Style for mobile first then add eg @include breakpoint(large){} for large screens etc
-$breakpoints: (
-  small: 499px,
-  medium: 699px,
-  large: 999px,
-  xlarge: 1399px
-);
+// $breakpoints: (
+//   small: 499px,
+//   medium: 699px,
+//   large: 999px,
+//   xlarge: 1399px
+// );
 
-@mixin breakpoint($size) {
-  $breakpoint-value: map-get($breakpoints, $size);
+// @mixin breakpoint($size) {
+//   $breakpoint-value: map-get($breakpoints, $size);
 
-  @media screen and (min-width: $breakpoint-value) {
-    @content;
+//   @media screen and (min-width: $breakpoint-value) {
+//     @content;
+//   }
+// }
+
+@media screen and (max-width: 580px) {
+  header {
+    .menu-icon {
+      display: inline-block;
+    }
+  }
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  nav ul {
+    max-height: 0px;
+    background: $dark-bg;
+  }
+
+  nav.black ul {
+    background: $dark-bg;
+  }
+
+  .showing {
+    max-height: 20em;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0;
+    text-align: center;
   }
 }
