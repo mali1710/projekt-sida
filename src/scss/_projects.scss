@@ -1,0 +1,9 @@
+.projects {
+  width: 100%;
+  background: $bg-color;
+  background: linear-gradient(
+    to right bottom,
+    $bg-color 50%,
+    darken($bg-color, 5) 50%
+  );
+}

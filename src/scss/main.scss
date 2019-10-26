@@ -1,5 +1,9 @@
 @import "config";
 @import "header";
+@import "presentation";
+@import "cv";
+@import "projects";
+@import "contact";
 @import "mixins";
 
 html,
@@ -15,4 +19,15 @@ body {
 
 section {
   min-height: 100vh;
+  margin: 0 auto;
+  .section-heading {
+    margin: auto;
+    width: 30%;
+    padding-top: 5em;
+    text-align: center;
+    font-family: $hero-font;
+    text-transform: uppercase;
+    color: $dark-font;
+    border-bottom: 1px solid $dark-font;
+  }
 }

@@ -15,16 +15,26 @@
 //   }
 // }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 664px) {
+  //Navbar och header
   header {
     .menu-icon {
       display: inline-block;
+      height: 5.5em;
     }
-  }
-  .logo {
-    position: fixed;
-    top: 0;
-    margin-top: 16px;
+
+    a {
+      color: $bg-color;
+    }
+
+    .logo {
+      position: fixed;
+      top: 0;
+      margin: 5px 0 0 1em;
+      img {
+        height: 100px;
+      }
+    }
   }
 
   nav ul {
@@ -45,5 +55,18 @@
     width: 100%;
     padding: 24px 0;
     text-align: center;
+  }
+
+  //Presentation
+  .p-wrapper {
+    flex-direction: column;
+    min-height: fit-content;
+    margin-top: 1em;
+
+    .presentation-text {
+      width: 90%;
+      margin: 1em auto;
+      padding: 2em;
+    }
   }
 }
