@@ -26,11 +26,14 @@ header {
     margin: 16px 36px;
     color: #fff;
 
+    a {
+    }
+
     img {
       height: 100px;
     }
   }
-  a {
+  a:not(.logo-link) {
     text-decoration: none;
     font-family: $hero-font;
     color: $dark-font;
