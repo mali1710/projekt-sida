@@ -4,6 +4,7 @@ header {
   background: url(../images/bg-large.jpg) no-repeat 50% 50%;
   background-size: cover;
   display: grid;
+  z-index: 2;
 
   grid-template-areas:
     "nav nav nav"
@@ -12,7 +13,7 @@ header {
     ". . .";
   .menu-icon {
     width: 100%;
-    background: $dark-bg;
+    background: $dark-font;
     text-align: right;
     box-sizing: border-box;
     padding: 2em 2em;
@@ -23,11 +24,7 @@ header {
   .logo {
     position: fixed;
     float: left;
-    margin: 16px 36px;
-    color: #fff;
-
-    a {
-    }
+    margin: 6px 36px;
 
     img {
       height: 100px;
@@ -66,6 +63,11 @@ header {
     grid-area: nav;
     position: fixed;
     width: 100%;
+    z-index: 10;
+    height: 90px;
+    // background-color: red;
+
+    // background-color: rgba($bg-color, 0.7);
 
     ul {
       list-style: none;
@@ -73,7 +75,6 @@ header {
       color: $dark-font;
       text-transform: uppercase;
       padding: 0;
-      margin: 0;
       text-align: right;
       transition: 1s;
 
@@ -84,7 +85,7 @@ header {
     }
 
     .black ul {
-      background: $dark-bg;
+      background: $dark-font;
     }
   }
 

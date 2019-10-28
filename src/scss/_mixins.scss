@@ -15,15 +15,16 @@
 //   }
 // }
 
+//Mobile screens
 @media screen and (max-width: 664px) {
   //Navbar och header
   header {
     .menu-icon {
       display: inline-block;
-      height: 5.5em;
+      height: 90px;
     }
 
-    a {
+    a:not(.logo-link) {
       color: $bg-color;
     }
 
@@ -39,7 +40,9 @@
 
   nav ul {
     max-height: 0px;
-    background: $dark-bg;
+    background: $dark-font;
+    margin: 0;
+    color: $bg-color;
   }
 
   nav.black ul {

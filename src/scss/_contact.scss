@@ -1,9 +1,37 @@
 .contact {
   width: 100%;
   background: $bg-color;
+  min-height: 40vh;
   background: linear-gradient(
     to left bottom,
     darken($bg-color, 5) 50%,
     $bg-color 50%
   );
+
+  .contact-wrapper {
+    display: flex;
+    font-family: $hero-font;
+    width: 40%;
+    margin: auto;
+    padding-top: 1em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    a {
+      color: $dark-font;
+      text-decoration: none;
+    }
+    .icon {
+      margin: 0.5em;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      i {
+        font-size: 4em;
+        text-align: center;
+        margin: auto;
+      }
+    }
+  }
 }
