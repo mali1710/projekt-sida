@@ -55,5 +55,6 @@ Konverterar ES6 och nya till ES5
 ## Om systemet
 
 För att använda detta system så klonar man ner det till sin egna dator med länken: [https://github.com/mali1710/projekt-sida.git].
+länk: www.mallind.se
 
 Kör sedan "npm init" för att installera. För att sätta igång gulp-processerna kör kommandot "gulp".
