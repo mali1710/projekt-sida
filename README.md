@@ -6,7 +6,7 @@
 
 ## Syfte och beskrivning
 
-Den här sidan är skapad för att visa användning av Node.js och automatiseringsprecess med Gulp samt Sass.
+Den här sidan är skapad för kursen Webbutveckling III, Mittuniversitetet. Det är en portfoliosida som via en weebbtjänst och ett administrationsgränsnsitt läser in information från en databas.
 
 ### Paket som används
 
